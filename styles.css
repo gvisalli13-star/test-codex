@@ -1,0 +1,171 @@
+:root {
+  --bg: #f7f9fc;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --muted: #4b5563;
+  --primary: #1d4ed8;
+  --primary-hover: #1e40af;
+  --border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.narrow {
+  width: min(780px, 100%);
+}
+
+.hero {
+  background: linear-gradient(180deg, #ffffff 0%, #eef4ff 100%);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.brand {
+  margin: 0;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.hero-content {
+  padding: 4.5rem 0 4rem;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  max-width: 18ch;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  margin-bottom: 0.8rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 58ch;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: var(--primary-hover);
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-alt {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  padding: 1.1rem;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.steps {
+  padding-left: 1.1rem;
+}
+
+.steps li {
+  margin-bottom: 0.8rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.contact-list li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-list a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  padding: 1.6rem 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .hero-content {
+    padding-top: 3.2rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+}
